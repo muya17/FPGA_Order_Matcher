@@ -1,0 +1,16 @@
+# Vivado temporary files
+*.log
+*.jou
+*.dcp
+*.bit
+.Xil/
+*.runs/
+*.cache/
+*.hw/
+*.sim/
+
+# General
+*.bak
+*.tmp
+*.swp
+.DS_Store
