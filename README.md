@@ -9,19 +9,6 @@ Outputs: LEDs (LED0: match status, LED1-2: match type), UART (9600 baud) for mat
 Logic: Finite State Machine (FSM) to read orders, store in buy/sell queues (4 orders each), and match based on price and quantity.
 Relevance: Demonstrates low-latency order matching, a key FPGA application in HFT.
 
-Repository Structure
-FPGA-Order-Matcher/
-├── src/
-│   ├── order_matcher.sv        # Main SystemVerilog module
-│   ├── order_matcher_tb.sv     # Testbench for simulation
-│   ├── basys3_constraints.xdc  # Constraints file for Basys3
-├── docs/
-│   ├── demo.mp4               # Demo video (to be added)
-│   ├── block_diagram.png      # Block diagram (to be added)
-├── .gitignore                 # Git ignore file
-├── LICENSE                    # MIT License
-├── README.md                  # This file
-
 Block Diagram
 The design consists of:
 
@@ -30,7 +17,7 @@ Order Queues: Stores up to 4 buy and 4 sell orders using SystemVerilog struct.
 Matching Logic: Compares buy/sell orders, matches if buy price ≥ sell price and quantities match.
 Output Module: Drives LEDs for match status and UART for result transmission.
 
-(Note: A block diagram image will be added to docs/block_diagram.png.)
+(Note: A block diagram will be added once the project is fully working.)
 Setup Instructions
 Prerequisites
 
@@ -75,7 +62,7 @@ The .xdc file maps to Basys3 pins but may need adjustments for full initializati
 Debug issues by verifying switch/button mappings and UART settings (9600 baud).
 
 Demo
-(To be added: Record a video showing switch inputs, LED outputs, and UART terminal output. Place in docs/demo.mp4.)
+A demo video showing switch inputs, LED outputs, and UART terminal output will be added once the project is fully working.
 Learning Goals
 This project was developed to:
 
